@@ -4,6 +4,12 @@
   width: 650px;
 }
 
+#image1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+
 #greeting-container {
   margin-top: 20px;
 }
