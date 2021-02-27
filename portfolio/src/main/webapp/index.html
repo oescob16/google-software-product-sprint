@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head> 
-    <h1><center>Oswaldo Escobedo</center></h1>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Oswaldo's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
   <body>
+    <div class="menu">
+        <div id="name">
+            <p>Oswaldo Escobedo</p>
+        </div>
+        <div id="home">
+            <p>Home</p>
+        </div>
+        <div id="gallery">
+            <p>Gallery</p>
+        </div>
+    </div>
     <div id="content">
       <h2><center>My Portfolio</center></h2>
-      <p>Hello there! I'm Oswaldo, a guy who has so much passion for
-        everything STEM-related and helping people, this is why I choose
-        <strong>Computer Science</strong> as my major!</p>
       <img src="images/DSC_0997.jpg" id="image1"/>
+      <p>Hello there! I'm Oswaldo, a guy who has so much passion for
+      everything STEM-related and helping people, this is why I choose
+      <strong>Computer Science</strong> as my major!</p>
       <p>Click <a href="/hello">here</a> to see content created by server code.</p>
       <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
+      <button onclick="addRandomGreeting()">Hello</button> 
       <div id="greeting-container"></div>
     </div>
   </body>
