@@ -1,12 +1,65 @@
+html {
+    background-color: beige;
+}
+
+.menu {
+    background-color: black;
+    margin-top: -10px;
+    margin-left: -8px;
+    margin-right: -8px;
+    position: sticky;
+    display: flex;
+}
+
+#name {
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    margin-left: 40px;
+    margin-right: auto;
+    float: left;
+}
+
+#home {
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+}
+
+#gallery {
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+}
+
 #content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #image1 {
   margin-left: auto;
   margin-right: auto;
+  border-radius: 50px;
+  border-width: 3px;
+  border-style: dashed;
+  border-color: white;
+  float: left;
   width: 250px;
 }
 
