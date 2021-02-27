@@ -1,5 +1,5 @@
 html {
-    background-color: beige;
+    background-color: white;
 }
 
 .menu {
@@ -7,35 +7,22 @@ html {
     margin-top: -10px;
     margin-left: -8px;
     margin-right: -8px;
-    position: sticky;
+    position: static;
     display: flex;
 }
 
-#name {
+#link1:link, #link1:visited, #link2:link, #link2:visited, #link3:link, #link3:visited,
+#link4:link, #link4:visited, #link5:link, #link5:visited {
     color: white;
-    font-size: 15px;
-    font-style: italic;
-    letter-spacing: 0.5px;
-    font-family: 'Trebuchet MS';
-    font-weight: bold;
-    margin-left: 40px;
-    margin-right: auto;
-    float: left;
+    text-decoration: none;
 }
 
-#home {
-    color: white;
-    font-size: 15px;
-    font-style: italic;
-    letter-spacing: 0.5px;
-    font-family: 'Trebuchet MS';
-    font-weight: bold;
-    margin-left: auto;
-    margin-right: auto;
-    float: left;
+#link1:hover, #link2:hover, #link3:hover, #link4:hover, #link5:hover {
+    text-decoration: underline;
+    color: aqua;
 }
 
-#gallery {
+#name, #home, #gallery, #about-me, #orgs, #projects{
     color: white;
     font-size: 15px;
     font-style: italic;
@@ -53,14 +40,15 @@ html {
 }
 
 #image1 {
-  margin-left: auto;
+  position: absolute;
+  margin-left: 45px;
   margin-right: auto;
   border-radius: 50px;
   border-width: 3px;
   border-style: dashed;
   border-color: white;
   float: left;
-  width: 250px;
+  width: 400px;
 }
 
 #greeting-container {
