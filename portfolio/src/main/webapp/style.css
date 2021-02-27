@@ -55,14 +55,14 @@ html {
 #my-text {
     color: black;
     font-size: 40px;
-    margin-top: 70px;
+    margin-top: 60px;
     margin-left: 100px;
     margin-right: 60px;
     float: left;
 }
 
 #my-image {
-    margin-top: 100px;
+    margin-top: 90px;
     margin-left: auto;
     margin-right: auto;
     float: left;
@@ -76,4 +76,32 @@ html {
   border-color: black;
   border-style: solid;
   width: 500px;
+}
+
+.socials {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#insta {
+    margin-bottom: 25px;
+    margin-right: 40px;
+    width: 60px;
+    float: left;
+}
+
+#linkedin {
+    margin-bottom: 25px;
+    margin-right: 40px;
+    width: 60px;
+    float: left;
+}
+
+#github {
+    margin-bottom: 25px;
+    margin-right: 120px;
+    width: 60px;
+    float: left;
 }
