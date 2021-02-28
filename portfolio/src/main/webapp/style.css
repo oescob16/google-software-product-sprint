@@ -1,5 +1,5 @@
 html {
-    background-color: white;
+    background-color: #EEEEEE;
 }
 
 .menu {
@@ -32,16 +32,6 @@ html {
     margin-left: auto;
     margin-right: auto;
     float: left;
-}
-
-.background {
-    background-color: #EEEEEE;
-    margin-left: -8px;
-    margin-right: -8px;
-    margin-top: -10px;
-    margin-bottom: -10px;
-    height: 707px;
-    width: auto;
 }
 
 .content {
@@ -104,4 +94,38 @@ html {
     margin-right: 120px;
     width: 60px;
     float: left;
+}
+
+#utep1 {
+    width: auto;
+    height: auto;
+}
+
+.Ataraxia {
+    margin-left: 100px;
+    margin-top: 100px;
+    display: block;
+}
+
+.MAES-SHPE {
+    margin-left: 100px;
+    margin-top: 350px;
+    display: block;
+}
+
+#ataraxia-logo, #maesshpe-logo {
+    width: 232px;
+    float: left;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+#ataraxia-text, #maesshpe-text {
+    width: 850px;
+    float: left;
+    padding-left: 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: white;
 }
