@@ -1,9 +1,216 @@
-#content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+html {
+    background-color: #EEEEEE;
 }
 
-#greeting-container {
-  margin-top: 20px;
+.menu {
+    background-color: black;
+    margin-top: -10px;
+    margin-left: -8px;
+    margin-right: -8px;
+    position: static;
+    display: flex;
+}
+
+#link1:link, #link1:visited, #link2:link, #link2:visited, #link3:link, #link3:visited,
+#link4:link, #link4:visited, #link5:link, #link5:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#link1:hover, #link2:hover, #link3:hover, #link4:hover, #link5:hover {
+    text-decoration: underline;
+    color: aqua;
+}
+
+#name, #home, #gallery, #about-me, #orgs, #projects{
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+}
+
+.content {
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    position: static;
+    display: flex;
+}
+
+#my-text {
+    color: black;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 60px;
+    float: left;
+}
+
+#my-image {
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+}
+
+#image1 {
+  margin-left: 80px;
+  margin-right: auto;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  width: 500px;
+}
+
+.socials {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#insta {
+    margin-bottom: 25px;
+    margin-right: 40px;
+    width: 60px;
+    float: left;
+}
+
+#linkedin {
+    margin-bottom: 25px;
+    margin-right: 40px;
+    width: 60px;
+    float: left;
+}
+
+#github {
+    margin-bottom: 25px;
+    margin-right: 120px;
+    width: 60px;
+    float: left;
+}
+
+#utep1 {
+    width: auto;
+    height: auto;
+}
+
+.Ataraxia {
+    margin-left: 100px;
+    margin-top: 100px;
+    display: block;
+}
+
+.MAES-SHPE {
+    margin-left: 100px;
+    margin-top: 350px;
+    display: block;
+}
+
+#ataraxia-logo, #maesshpe-logo {
+    width: 232px;
+    float: left;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+#ataraxia-text, #maesshpe-text {
+    width: 850px;
+    float: left;
+    padding-left: 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: white;
+}
+
+#nat-1, #nat-2, #nat-3, #nat-4, #nat-5, #nat-6 {
+    width: 240px;
+    margin-left: 10px;
+} 
+
+.nature-images-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  justify-content: center;
+}
+
+#port-1, #port-2, #port-3, #port-4, #port-5, #port-6, #port-7 {
+  width: 210px;
+  margin-left: 5px;
+}
+
+.portrait-images-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  justify-content: center;
+}
+
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -100px;
+  justify-content: center;
+}
+
+#profile-pic {
+    width: 430px;
+    border-radius: 5%;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 30px;
+}
+
+#profile-text {
+    background-color: white;
+    border-radius: 5%;
+    border-color: rgb(80, 67, 67);
+    border-style: solid;
+    border-width: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 50px;
+    margin-top: 30px;
+    float: left;
+    width: 800px;
+}
+
+#languages, #achievements {
+  padding-left: 15px;
+}
+
+.be-my-hero-app, .brightest-region-app {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+#be-my-hero-logo, #bright-region-img {
+  width: 250px;
+  border-radius: 5%;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  background-color: aqua;
+}
+
+#be-my-hero-text, #bright-region-text {
+  width: 600px;
+  font-size: 20px;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
 }

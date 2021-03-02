@@ -1,19 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head> 
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Oswaldo's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
   <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+    <div class="menu">
+        <div id="name">
+            <p>Oswaldo Escobedo</p>
+        </div>
+        <div id="home">
+            <p><a href="index.html" id="link1">Home</a></p>
+        </div>
+        <div id="about-me">
+            <p><a href="about-me.html" id="link2">About me</a></p>
+        </div>
+        <div id="gallery">
+            <p><a href="gallery.html" id="link3">Gallery</a></p>
+        </div>
+        <div id="projects">
+            <p><a href="projects.html" id="link4">Projects</a></p>
+        </div>
+        <div id="orgs">
+            <p><a href="orgs.html" id="link5">Organizations</a></p>
+        </div>
+    </div>
+    <div class="content">
+      <div id="my-image">
+        <img src="images/me2.jpeg" id="image1"/>
+      </div>
+      <div id="my-text">
+        <h2>< p > Hello, World! < /p></h2>
+        <h3>I'm Oswi, a junior Student at UTEP!</h3>
+        <p>One of my goals is to create a more inclusive, supportive and safe 
+          environment in the world. Also, I want to encourage people to be 
+          dreamers and help them get out of their comfort zone!
+        </p>
+      </div>
+    </div>
+    <div class="socials">
+      <a href="https://www.instagram.com/oswipy/"><img src="images/instagram.png" id="insta"/></a>
+      <a href="https://www.linkedin.com/in/oescob/"><img src="images/linkedin.png" id="linkedin"/></a>
+      <a href="https://github.com/oescob16"><img src="images/github.png" id="github"/></a>
     </div>
   </body>
 </html>
