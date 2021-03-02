@@ -214,3 +214,7 @@ html {
   border-color: black;
   border-width: 2px;
 }
+
+#hello-button, #hello-container {
+    margin-left: 330px;
+}
