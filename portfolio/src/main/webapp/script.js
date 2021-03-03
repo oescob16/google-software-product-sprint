@@ -12,10 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-async function helloWorld() {
-  const responseFromServer = await fetch('/hello');
-  const textFromResponse = await responseFromServer.text();
+async function quotes() {
+  const responseFromServer = await fetch('/quotes');
+  const quotes = await responseFromServer.json();
 
-  const dateContainer = document.getElementById('hello-container');
-  dateContainer.innerText = textFromResponse;
+  const quoteText = quotes[Math.floor(Math.random() * quotes.length)];
+
+  const quotesContainer = document.getElementById('quotes-container');
+  quotesContainer.innerText = quoteText;
 }
