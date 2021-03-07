@@ -12,17 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-/**
- * Adds a random greeting to the page.
- */
-function addRandomGreeting() {
-  const greetings =
-      ['Im a photographer!', 'Im very good at math!', 'Im so sensitive!'];
+async function quotes() {
+  const responseFromServer = await fetch('/quotes');
+  const quotes = await responseFromServer.json();
 
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+  const quoteText = quotes[Math.floor(Math.random() * quotes.length)];
 
-  // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+  const quotesContainer = document.getElementById('quotes-container');
+  quotesContainer.innerText = quoteText;
 }
