@@ -1,61 +1,61 @@
 html {
-    background-color: #EEEEEE;
+  background-color: #EEEEEE;
 }
 
 .menu {
-    background-color: black;
-    margin-top: -10px;
-    margin-left: -8px;
-    margin-right: -8px;
-    position: static;
-    display: flex;
+  background-color: black;
+  margin-top: -10px;
+  margin-left: -8px;
+  margin-right: -8px;
+  position: static;
+  display: flex;
 }
 
 #link1:link, #link1:visited, #link2:link, #link2:visited, #link3:link, #link3:visited,
 #link4:link, #link4:visited, #link5:link, #link5:visited {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 #link1:hover, #link2:hover, #link3:hover, #link4:hover, #link5:hover {
-    text-decoration: underline;
-    color: aqua;
+  text-decoration: underline;
+  color: aqua;
 }
 
 #name, #home, #gallery, #about-me, #orgs, #projects{
-    color: white;
-    font-size: 15px;
-    font-style: italic;
-    letter-spacing: 0.5px;
-    font-family: 'Trebuchet MS';
-    font-weight: bold;
-    margin-left: auto;
-    margin-right: auto;
-    float: left;
+  color: white;
+  font-size: 15px;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  font-family: 'Trebuchet MS';
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
 }
 
 .content {
-    margin-top: -50px;
-    margin-left: auto;
-    margin-right: 25px;
-    position: static;
-    display: flex;
+  margin-top: -50px;
+  margin-left: auto;
+  margin-right: 25px;
+  position: static;
+  display: flex;
 }
 
 #my-text {
-    color: black;
-    font-size: 40px;
-    margin-top: 40px;
-    margin-left: 100px;
-    margin-right: 60px;
-    float: left;
+  color: black;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-left: 100px;
+  margin-right: 60px;
+  float: left;
 }
 
 #my-image {
-    margin-top: 90px;
-    margin-left: auto;
-    margin-right: auto;
-    float: left;
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
 }
 
 #image1 {
@@ -69,70 +69,70 @@ html {
 }
 
 .socials {
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    right: 0;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
 #insta {
-    margin-bottom: 25px;
-    margin-right: 40px;
-    width: 60px;
-    float: left;
+  margin-bottom: 25px;
+  margin-right: 40px;
+  width: 60px;
+  float: left;
 }
 
 #linkedin {
-    margin-bottom: 25px;
-    margin-right: 40px;
-    width: 60px;
-    float: left;
+  margin-bottom: 25px;
+  margin-right: 40px;
+  width: 60px;
+  float: left;
 }
 
 #github {
-    margin-bottom: 25px;
-    margin-right: 120px;
-    width: 60px;
-    float: left;
+  margin-bottom: 25px;
+  margin-right: 120px;
+  width: 60px;
+  float: left;
 }
 
 #utep1 {
-    width: auto;
-    height: auto;
+  width: auto;
+  height: auto;
 }
 
 .Ataraxia {
-    margin-left: 100px;
-    margin-top: 100px;
-    display: block;
+  margin-left: 100px;
+  margin-top: 100px;
+  display: block;
 }
 
 .MAES-SHPE {
-    margin-left: 100px;
-    margin-top: 350px;
-    display: block;
+  margin-left: 100px;
+  margin-top: 350px;
+  display: block;
 }
 
 #ataraxia-logo, #maesshpe-logo {
-    width: 232px;
-    float: left;
-    border-radius: 5px;
-    border-style: solid;
+  width: 232px;
+  float: left;
+  border-radius: 5px;
+  border-style: solid;
 }
 
 #ataraxia-text, #maesshpe-text {
-    width: 850px;
-    float: left;
-    padding-left: 20px;
-    margin-left: 30px;
-    border-radius: 5px;
-    border-style: solid;
-    background-color: white;
+  width: 850px;
+  float: left;
+  padding-left: 20px;
+  margin-left: 30px;
+  border-radius: 5px;
+  border-style: solid;
+  background-color: white;
 }
 
 #nat-1, #nat-2, #nat-3, #nat-4, #nat-5, #nat-6 {
-    width: 240px;
-    margin-left: 10px;
+  width: 240px;
+  margin-left: 10px;
 } 
 
 .nature-images-container {
@@ -162,26 +162,26 @@ html {
 }
 
 #profile-pic {
-    width: 430px;
-    border-radius: 5%;
-    border-color: black;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 30px;
+  width: 430px;
+  border-radius: 5%;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  margin-top: 30px;
 }
 
 #profile-text {
-    background-color: white;
-    border-radius: 5%;
-    border-color: rgb(80, 67, 67);
-    border-style: solid;
-    border-width: 2px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 50px;
-    margin-top: 30px;
-    float: left;
-    width: 800px;
+  background-color: white;
+  border-radius: 5%;
+  border-color: rgb(80, 67, 67);
+  border-style: solid;
+  border-width: 2px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 50px;
+  margin-top: 30px;
+  float: left;
+  width: 800px;
 }
 
 #languages, #achievements {
