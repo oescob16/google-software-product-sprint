@@ -12,17 +12,17 @@ html {
 }
 
 #link1:link, #link1:visited, #link2:link, #link2:visited, #link3:link, #link3:visited,
-#link4:link, #link4:visited, #link5:link, #link5:visited {
+#link4:link, #link4:visited, #link5:link, #link5:visited, #link6:link, #link6:visited  {
   color: white;
   text-decoration: none;
 }
 
-#link1:hover, #link2:hover, #link3:hover, #link4:hover, #link5:hover {
+#link1:hover, #link2:hover, #link3:hover, #link4:hover, #link5:hover, #link6:hover{
   text-decoration: underline;
   color: aqua;
 }
 
-#name, #home, #gallery, #about-me, #orgs, #projects{
+#name, #home, #gallery, #about-me, #orgs, #projects, #contact-me {
   color: white;
   font-size: 15px;
   font-style: italic;
