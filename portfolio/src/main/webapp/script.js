@@ -96,21 +96,39 @@ function createMap() {
   const pictureSpot3 = new google.maps.LatLng(31.6591463,-106.4399946);
   const pictureSpot4 = new google.maps.LatLng(31.742862, -106.450607);
 
-  addMarker(pictureSpot1, map, 'Las palmas');
-  addMarker(pictureSpot2, map, 'El refugio');
-  addMarker(pictureSpot3, map, 'El palacio');
-  addMarker(pictureSpot4, map, 'El subterraneo');
+  const contentPicSpot1 = 
+  '<div id="content">' +
+  '<div id="spotInfo1">' + 
+  '</div>' +
+  '<h1 id="title1">El subterraneo</h1>' +
+  '<div id="picContent1">' +
+  '<p><b>El subterraneo</b> es llamado asi debido a que, aparte de que hay un edificio sin terminar ' +
+  'se encuentra un estacionamiento subterraneo que jamas se termino de construir. ' +
+  'Dicho subterraneo desciende 2 niveles, en donde el ultimo casi no llega luz y, por ende, ' +
+  'un lugar excelente para tomar fotos. Lo especial de este lugar es que la profundidad de la escenografia ' + 
+  'gracias a los grafitis creativos que se encuentran en el lugar.'
+
+  addMarker(pictureSpot1, map, 'Las palmas', 'En construccion...');
+  addMarker(pictureSpot2, map, 'El refugio', 'En construccion...');
+  addMarker(pictureSpot3, map, 'El palacio', 'En construccion...');
+  addMarker(pictureSpot4, map, 'El subterraneo', contentPicSpot1);
 
   marker.setMap(map)
 }
 
-function addMarker(location, map, title) {
+function addMarker(location, map, title, contentPic) {
+  const infoPicWindow = new google.maps.InfoWindow({
+    content: contentPic,
+  })
   marker = new google.maps.Marker({
     position: location,
     map: map,
     label: labels[labelIndex++ % labels.length],
     animation: google.maps.Animation.DROP,
     title: title,
+  });
+  marker.addListener('click', () => {
+    infoPicWindow.open(map, marker);
   });
   marker.addListener('click', toggleBounce);
 }
