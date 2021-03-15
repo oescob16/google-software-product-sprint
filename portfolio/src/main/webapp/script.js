@@ -12,6 +12,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+const labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+let labelIndex = 0;
+
 async function quotes() {
   const responseFromServer = await fetch('/quotes');
   const quotes = await responseFromServer.json();
@@ -82,4 +85,29 @@ function createMap() {
 
   map.mapTypes.set('styled_map', styledMapType);
   map.setMapTypeId('styled_map');
+
+  google.maps.event.addListener(map, 'click', (event) => {
+    addMarker(event.LatLng, map)
+  });
+
+  const pictureSpot1 = new google.maps.LatLng(31.7414412, -106.4837855);
+  const pictureSpot2 = new google.maps.LatLng(31.762481, -106.457501);
+  const pictureSpot3 = new google.maps.LatLng(31.6591463,-106.4399946);
+  const pictureSpot4 = new google.maps.LatLng(31.742862, -106.450607);
+
+  addMarker(pictureSpot1, map, 'Las palmas');
+  addMarker(pictureSpot2, map, 'El refugio');
+  addMarker(pictureSpot3, map, 'El palacio');
+  addMarker(pictureSpot4, map, 'El subterraneo');
+
+  marker.setMap(map)
+}
+
+function addMarker(location, map, title) {
+  new google.maps.Marker({
+    position: location,
+    map: map,
+    label: labels[labelIndex++ % labels.length],
+    title: title,
+  });
 }
