@@ -16,6 +16,9 @@ const labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 let labelIndex = 0;
 let marker;
 
+google.charts.load('current', {packages:['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
 async function quotes() {
   const responseFromServer = await fetch('/quotes');
   const quotes = await responseFromServer.json();
@@ -139,4 +142,28 @@ function toggleBounce() {
   } else {
     marker.setAnimation(google.maps.Animation.BOUNCE);
   }
+}
+
+function drawChart() {
+  const data = google.visualization.arrayToDataTable([
+    ['Task', 'Hours per Day'],
+    ['School', 2],
+    ['Homework', 4],
+    ['Eat', 3],
+    ['Watch Netflix', 3],
+    ['Sleep', 7]
+  ]);
+
+  const options = {
+    backgroundColor: 'transparent',
+    legend: 'none',
+    pieSliceText: 'label',
+    title: 'My daily activities',
+    pieHole: 0.4,
+  };
+
+  const chart = new google.visualization.PieChart(
+    document.getElementById('chart-container'));
+  
+  chart.draw(data, options);
 }
