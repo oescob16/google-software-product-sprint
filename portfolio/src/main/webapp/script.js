@@ -14,6 +14,7 @@
 
 const labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 let labelIndex = 0;
+let marker;
 
 async function quotes() {
   const responseFromServer = await fetch('/quotes');
@@ -104,10 +105,20 @@ function createMap() {
 }
 
 function addMarker(location, map, title) {
-  new google.maps.Marker({
+  marker = new google.maps.Marker({
     position: location,
     map: map,
     label: labels[labelIndex++ % labels.length],
+    animation: google.maps.Animation.DROP,
     title: title,
   });
+  marker.addListener('click', toggleBounce);
+}
+
+function toggleBounce() {
+  if (marker.getAnimation() !== null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
 }
