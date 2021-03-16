@@ -17,7 +17,8 @@ let labelIndex = 0;
 let marker;
 
 google.charts.load('current', {packages:['corechart']});
-google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(drawChart1);
+google.charts.setOnLoadCallback(drawChart2);
 
 async function quotes() {
   const responseFromServer = await fetch('/quotes');
@@ -144,8 +145,8 @@ function toggleBounce() {
   }
 }
 
-function drawChart() {
-  const data = google.visualization.arrayToDataTable([
+function drawChart1() {
+  const dataChart1 = google.visualization.arrayToDataTable([
     ['Task', 'Hours per Day'],
     ['School', 2],
     ['Homework', 4],
@@ -154,7 +155,7 @@ function drawChart() {
     ['Sleep', 7]
   ]);
 
-  const options = {
+  const optionsChart1 = {
     backgroundColor: 'transparent',
     legend: 'none',
     pieSliceText: 'label',
@@ -162,8 +163,33 @@ function drawChart() {
     pieHole: 0.4,
   };
 
-  const chart = new google.visualization.PieChart(
-    document.getElementById('chart-container'));
-  
+  drawChartHelper(dataChart1, optionsChart1, 'chart-container');
+}
+
+function drawChart2() {
+  var dataChart2 = google.visualization.arrayToDataTable([
+    ['Pac Man', 'Percentage'],
+    ['', 75],
+    ['', 25]
+  ]);
+
+  var optionsChart2 = {
+    backgroundColor: 'transparent',
+    pieSliceBorderColor: 'transparent',
+    legend: 'none',
+    pieSliceText: 'none',
+    pieStartAngle: 135,
+    tooltip: { trigger: 'none' },
+    slices: {
+      0: { color: 'yellow' },
+      1: { color: 'transparent'}
+    }
+  };
+
+  drawChartHelper(dataChart2, optionsChart2, 'pacman-container');
+}
+
+function drawChartHelper(data, options, id) {
+  var chart = new google.visualization.PieChart(document.getElementById(id));
   chart.draw(data, options);
 }
