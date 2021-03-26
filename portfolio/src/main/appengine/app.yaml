@@ -1,1 +1,3 @@
 runtime: java11
+includes:
+  - /home/oescobedo/software-product-sprint/portfolio/src/main/appengine/env_variables.yaml
