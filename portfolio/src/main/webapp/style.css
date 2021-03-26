@@ -233,3 +233,23 @@ html {
   text-align: center;
   position: absolute;
 }
+
+#map {
+  border: thin solid black;
+  height: 500px;
+  width: 1500px;
+}
+
+#chart-container {
+	margin-top: -40px;
+	margin-left: -40px;
+	width: 500px;
+	height: 500px;
+}
+
+#pacman-container {
+	width: 100px;
+	height: 100px;
+	margin-left: 900px;
+	margin-top: -140px;
+}
