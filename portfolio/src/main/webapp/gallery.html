@@ -3,10 +3,11 @@
   <head> 
     <meta charset="UTF-8">
     <title>Oswaldo's Gallery</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQWDm1TPDqfSURzQUUQsVLhwj0Hez8WWo"></script>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script> 
   </head>
-  <body>
+  <body onload="createMap()">
     <div class="menu">
       <div id="name">
         <p>Oswaldo Escobedo</p>
@@ -51,5 +52,10 @@
         <img src="images/portrait-pics/portrait-7.jpg" id="port-7">
       </div>
     </div>
+    <h1>Picture spots</h1>
+    <p>This map shows the places where I usually take photos!</p>
+    <div id="map">
+    </div>
+</body>
   </body> 
 </html>
